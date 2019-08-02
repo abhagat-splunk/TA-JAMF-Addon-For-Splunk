@@ -1,0 +1,317 @@
+{
+    "pages": {
+        "inputs": {
+            "table": {
+                "moreInfo": [
+                    {
+                        "field": "name", 
+                        "label": "Name"
+                    }, 
+                    {
+                        "field": "interval", 
+                        "label": "Interval"
+                    }, 
+                    {
+                        "field": "index", 
+                        "label": "Index"
+                    }, 
+                    {
+                        "field": "disabled", 
+                        "label": "Status"
+                    }, 
+                    {
+                        "field": "name_of_the_modular_input", 
+                        "label": "Name of the Modular Input"
+                    }, 
+                    {
+                        "field": "jss_url", 
+                        "label": "JSS URL"
+                    }, 
+                    {
+                        "field": "api_call", 
+                        "label": "API Call"
+                    }, 
+                    {
+                        "field": "search_name", 
+                        "label": "Search Name"
+                    }, 
+                    {
+                        "field": "jss_username", 
+                        "label": "Username"
+                    }, 
+                    {
+                        "field": "jss_password", 
+                        "label": "Password"
+                    }, 
+                    {
+                        "field": "index_name", 
+                        "label": "Index Name"
+                    }, 
+                    {
+                        "field": "host_name", 
+                        "label": "Host Name"
+                    }
+                ], 
+                "header": [
+                    {
+                        "field": "name", 
+                        "label": "Name"
+                    }, 
+                    {
+                        "field": "interval", 
+                        "label": "Interval"
+                    }, 
+                    {
+                        "field": "index", 
+                        "label": "Index"
+                    }, 
+                    {
+                        "field": "disabled", 
+                        "label": "Status"
+                    }
+                ], 
+                "actions": [
+                    "edit", 
+                    "enable", 
+                    "delete", 
+                    "clone"
+                ]
+            }, 
+            "description": "Manage your data inputs", 
+            "title": "Inputs", 
+            "services": [
+                {
+                    "entity": [
+                        {
+                            "required": true, 
+                            "help": "Enter a unique name for the data input", 
+                            "field": "name", 
+                            "validators": [
+                                {
+                                    "pattern": "^[a-zA-Z]\\w*$", 
+                                    "errorMsg": "Input Name must start with a letter and followed by alphabetic letters, digits or underscores.", 
+                                    "type": "regex"
+                                }, 
+                                {
+                                    "maxLength": 100, 
+                                    "minLength": 1, 
+                                    "errorMsg": "Length of input name should be between 1 and 100", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Name", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "help": "Time interval of input in seconds.", 
+                            "field": "interval", 
+                            "validators": [
+                                {
+                                    "pattern": "^\\-[1-9]\\d*$|^\\d*$", 
+                                    "errorMsg": "Interval must be an integer.", 
+                                    "type": "regex"
+                                }
+                            ], 
+                            "label": "Interval", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "options": {
+                                "createSearchChoice": true, 
+                                "blackList": "^_.*$", 
+                                "endpointUrl": "data/indexes"
+                            }, 
+                            "field": "index", 
+                            "defaultValue": "default", 
+                            "validators": [
+                                {
+                                    "maxLength": 80, 
+                                    "minLength": 1, 
+                                    "errorMsg": "Length of index name should be between 1 and 80.", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Index", 
+                            "type": "singleSelect"
+                        }, 
+                        {
+                            "required": true, 
+                            "help": "", 
+                            "field": "name_of_the_modular_input", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Name of the Modular Input", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "help": "Jamf Pro URL", 
+                            "field": "jss_url", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "JSS URL", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "help": "Type of Advanced Search to call", 
+                            "field": "api_call", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "API Call", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "help": "Preconfigured Advanced Search to call", 
+                            "field": "search_name", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Search Name", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "help": "", 
+                            "field": "jss_username", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Username", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": true, 
+                            "encrypted": true, 
+                            "help": "", 
+                            "field": "jss_password", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of password is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Password", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": false, 
+                            "help": "", 
+                            "field": "index_name", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Index Name", 
+                            "type": "text"
+                        }, 
+                        {
+                            "required": false, 
+                            "help": "", 
+                            "field": "host_name", 
+                            "validators": [
+                                {
+                                    "maxLength": 8192, 
+                                    "minLength": 0, 
+                                    "errorMsg": "Max length of text input is 8192", 
+                                    "type": "string"
+                                }
+                            ], 
+                            "label": "Host Name", 
+                            "type": "text"
+                        }
+                    ], 
+                    "title": "JAMF Pro", 
+                    "name": "jamf_pro"
+                }
+            ]
+        }, 
+        "configuration": {
+            "description": "Set up your add-on", 
+            "title": "Configuration", 
+            "tabs": [
+                {
+                    "entity": [
+                        {
+                            "field": "loglevel", 
+                            "options": {
+                                "autoCompleteFields": [
+                                    {
+                                        "label": "DEBUG", 
+                                        "value": "DEBUG"
+                                    }, 
+                                    {
+                                        "label": "INFO", 
+                                        "value": "INFO"
+                                    }, 
+                                    {
+                                        "label": "WARNING", 
+                                        "value": "WARNING"
+                                    }, 
+                                    {
+                                        "label": "ERROR", 
+                                        "value": "ERROR"
+                                    }, 
+                                    {
+                                        "label": "CRITICAL", 
+                                        "value": "CRITICAL"
+                                    }
+                                ], 
+                                "disableSearch": true
+                            }, 
+                            "defaultValue": "INFO", 
+                            "label": "Log level", 
+                            "type": "singleSelect"
+                        }
+                    ], 
+                    "title": "Logging", 
+                    "name": "logging"
+                }
+            ]
+        }
+    }, 
+    "meta": {
+        "displayName": "JAMF Pro Add On for Splunk", 
+        "version": "1.0.0", 
+        "restRoot": "TA_jamf_pro_add_on_for_splunk", 
+        "name": "TA-jamf-pro-add-on-for-splunk", 
+        "apiVersion": "3.0.0"
+    }
+}

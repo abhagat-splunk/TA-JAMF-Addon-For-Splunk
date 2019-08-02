@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "info": {
+    "title": "JAMF Pro Add On for Splunk",
+    "id": {
+      "group": null,
+      "name": "TA-jamf-pro-add-on-for-splunk",
+      "version": "1.0.0"
+    },
+    "author": [
+      {
+        "name": "FDSE",
+        "email": null,
+        "company": null
+      }
+    ],
+    "releaseDate": null,
+    "description": "JAMF Pro Add On.",
+    "classification": {
+      "intendedAudience": null,
+      "categories": [],
+      "developmentStatus": null
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": null,
+      "text": null,
+      "uri": null
+    }
+  },
+  "dependencies": {
+  },
+  "tasks": [],
+  "inputGroups": {
+  },
+  "incompatibleApps": {
+  },
+  "platformRequirements": {
+    "splunk": {
+      "Enterprise": "*"
+    }
+  }
+}

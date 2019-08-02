@@ -1,0 +1,49 @@
+[props/jamf_pro]
+owner = admin
+version = 7.2.6
+modtime = 1563902540.579702000
+
+[props/source%3A%3A...ta-jamf-pro-add-on-for-splunk%2A.log%2A]
+owner = admin
+version = 7.2.6
+modtime = 1563902540.751592000
+
+[props/source%3A%3A...ta_jamf_pro_add_on_for_splunk%2A.log%2A]
+owner = admin
+version = 7.2.6
+modtime = 1563902540.871903000
+
+[passwords/credential%3A__REST_CREDENTIAL__%23TA-jamf-pro-add-on-for-splunk%23data%2Finputs%2Fjamf_pro%3Aggjamfone%60%60splunk_cred_sep%60%601%3A]
+owner = admin
+version = 7.2.6
+modtime = 1564524693.674477000
+
+[passwords/credential%3A__REST_CREDENTIAL__%23TA-jamf-pro-add-on-for-splunk%23data%2Finputs%2Fjamf_pro%3Aggjamfone%60%60splunk_cred_sep%60%602%3A]
+owner = admin
+version = 7.2.6
+modtime = 1564524693.686536000
+
+[passwords/credential%3A__REST_CREDENTIAL__%23TA-jamf-pro-add-on-for-splunk%23data%2Finputs%2Fjamf_pro%3Ajamf%60%60splunk_cred_sep%60%601%3A]
+owner = admin
+version = 7.2.6
+modtime = 1564524925.169507000
+
+[passwords/credential%3A__REST_CREDENTIAL__%23TA-jamf-pro-add-on-for-splunk%23data%2Finputs%2Fjamf_pro%3Ajamf%60%60splunk_cred_sep%60%602%3A]
+owner = admin
+version = 7.2.6
+modtime = 1564524925.179663000
+
+[passwords/credential%3A__REST_CREDENTIAL__%23TA-jamf-pro-add-on-for-splunk%23data%2Finputs%2Fjamf_pro%3Ajamfgg%60%60splunk_cred_sep%60%601%3A]
+owner = admin
+version = 7.2.6
+modtime = 1564539066.103218000
+
+[passwords/credential%3A__REST_CREDENTIAL__%23TA-jamf-pro-add-on-for-splunk%23data%2Finputs%2Fjamf_pro%3Ajamfgg%60%60splunk_cred_sep%60%602%3A]
+owner = admin
+version = 7.2.6
+modtime = 1564539066.117222000
+
+[inputs/jamf_pro%3A%2F%2Fjamfgg]
+owner = admin
+version = 7.2.6
+modtime = 1564539817.234863000
